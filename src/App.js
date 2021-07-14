@@ -33,7 +33,8 @@ function App() {
   return (
        <div className='absolute min-h-screen w-full' style={{backgroundImage: "linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%)"}}>
       <BrowserRouter>
-         <Navbar/>
+          {true ? <h1 className='text-6xl font-serif text-blue-600 align-middle flex'>This site is under work - Mushaidul Islam</h1> : <>       
+          <Navbar/>
        <Switch>
          <div className='w-full '>
          <Route exact path='/'>
@@ -54,6 +55,8 @@ function App() {
          </Route>
          </div>
        </Switch>
+       </>
+       }
        </BrowserRouter>
        </div>
        

@@ -17,7 +17,9 @@ const Dashboard = () => {
                 }
             ))
             )
+        
         ) 
+        
         
     }, [])
 
@@ -25,7 +27,7 @@ const Dashboard = () => {
         <div className='grid relative grid-cols-2 gap-4 px-10  mt-3 w-full mb-3'>
             <div className='space-y-2'>
                  {projects && projects.map(({id,data:{title,content,fullName,timestamp}}) =>
-                    <ProjectList title={title} content={content} fullName={fullName} timestamp={timestamp} key={id}/>
+                    <ProjectList title={title} content={content} fullName={fullName} timestamp={timestamp} key={id} docId={id}/>
                     )} 
                 
             </div>
